@@ -1,0 +1,68 @@
+# Folder names
+gda/
+adg/
+gdadg/
+adgda/
+gdA
+Adg/
+gdAdg/
+AdgdA/
+ndA/
+Adn/
+ndAdn/
+AdndA/
+
+# Water coupler output files
+fort.19.new
+fort.19.new.*
+fort.20.new
+fort.20.new.*
+output.*
+
+# XDMF extensions
+*.h5
+*.xmf
+
+# ADCIRC output files
+fort.16
+fort.17
+fort.33
+fort.63
+fort.64
+fort.65
+fort.66
+fort.67
+fort.68
+fort.73
+fort.74
+fort.75
+fort.76
+fort.77
+fort.78
+fort.777
+FORT.789
+FORT.790
+fort.791
+fort.888
+fort.889
+
+# AdH output files
+*.dat
+
+# GSSHA output files
+*.cdp
+*.cdq
+*.dep
+*.drn
+*.ohl
+*.otl
+*.sum
+bad_thalweg.out
+short_links.out
+maskmap
+
+# gnuplot/LaTeX intermediate files
+*.aux
+*.log
+*-inc.pdf
+
