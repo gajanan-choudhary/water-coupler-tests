@@ -32,7 +32,7 @@ mannings_n_at_sea_floor
  0                                     ! NUMBER OF TIDAL POTENTIAL CONSTITUENTS BEING FORCED
  0                                     ! NBFR - TOTAL NUMBER OF FORCING FREQUENCIES ON OPEN BOUNDARIES
  0.0                                   ! ANGINN : INNER ANGLE THRESHOLD
- 0                                     ! NFFR
+ 0                                     ! NFFR - TOTAL NUMBER OF FORCING FREQUENCIES ON FLUX BOUNDARIES
  0 0.0 12.0 150                        ! NOUTE,TOUTSE,TOUTFE,NSPOOLE:ELEV STATION OUTPUT INFO (UNIT  61)
  0                                     ! TOTAL NUMBER OF ELEVATION RECORDING STATIONS
  0 0.0 12.0 150                        ! NOUTV,TOUTSV,TOUTFV,NSPOOLV:ELEV STATION OUTPUT INFO (UNIT  62)

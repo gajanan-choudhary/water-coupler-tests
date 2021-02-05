@@ -19689,12 +19689,10 @@ GLAVESTON BAY
 605
 26 = Number of land boundaries
 2590 = Total number of land boundary nodes
-5 22 = Number of nodes for land boundary 1
-4643
+3 22 = Number of nodes for land boundary 1
 4642
 4653
 4654
-4667
 880 0 = Number of nodes for land boundary 2
 605
 647
@@ -20581,7 +20579,7 @@ GLAVESTON BAY
 7405
 7408
 7410
-350 20 = Number of nodes for land boundary 4
+351 20 = Number of nodes for land boundary 4
 7410
 7409
 7407
@@ -20932,7 +20930,9 @@ GLAVESTON BAY
 4671
 4657
 4643
-272 20 = Number of nodes for land boundary 5
+4642
+273 20 = Number of nodes for land boundary 5
+4654
 4667
 4681
 4695
