@@ -1,3 +1,8 @@
+# Shortcuts
+watercoupler
+pythoncoupler
+makeshortcut.sh
+
 # Folder names
 gda/
 adg/
@@ -40,8 +45,8 @@ fort.76
 fort.77
 fort.78
 fort.777
-FORT.789
-FORT.790
+fort.789
+fort.790
 fort.791
 fort.888
 fort.889
@@ -65,4 +70,5 @@ maskmap
 *.aux
 *.log
 *-inc.pdf
+*_outflow_hydrograph.pdf
 
