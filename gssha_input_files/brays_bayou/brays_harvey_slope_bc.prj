@@ -1,0 +1,73 @@
+GSSHAPROJECT
+#WMS info
+WMS WMS 10.1.13 (64-bit)
+
+#Grid data
+FLINE                    "brays_harvey.map"
+WATERSHED_MASK           "brays_harvey.msk"
+ELEVATION                "brays_harvey.ele"
+PROJECT_PATH             ""
+PROJECTION_FILE          "brays_harvey.pro"
+METRIC
+QOUT_CFS
+GRIDSIZE                 100.000000
+ROWS                     166
+COLS                     341
+
+#Boundary Conditions
+OUTROW                   58
+OUTCOL                   339
+OUTSLOPE                 0.001000
+#HEAD_BOUND
+##OVERBANK_FLOW
+##BOUND_DEPTH              3.00
+#BOUND_TS                 "dummy_bound_ts"
+#READ_CHAN_HOTSTART       "brays_harvey.chanhotstart"
+##WRITE_CHAN_HOTSTART      "brays_harvey.chanhotstart"
+
+#Time data
+TOT_TIME                 8640
+TIMESTEP                 0.25
+MAP_FREQ                 180
+HYD_FREQ                 180
+#TIME_SERIES_FILE         "brays_harvey.xys"
+
+#Mapping Tables
+MAPPING_TABLE            "brays_harvey.cmt"
+ST_MAPPING_TABLE         "brays_harvey.smt"
+#INDEXGRID_GUID          "SoilType.idx" "c0b3fc2c-8abd-4845-a1d5-77e3ac7dc665"
+#INDEXGRID_GUID          "LandUse.idx" "7a6c56dc-91ad-4b6a-9f40-1707eef1fbb8"
+#LandSoil                "brays_harvey.lsf"
+
+#Overland Flow
+OVERTYPE                 ADE-PC
+
+#Stream Flow
+NON_ORTHO_CHANNELS
+STREAM_CELL              "brays_harvey.gst"
+CHANNEL_INPUT            "brays_harvey.cif"
+DIFFUSIVE_WAVE
+
+#Precipitation
+PRECIP_FILE              "brays_harvey.gag"
+RAIN_INV_DISTANCE
+#RAIN_INTENSITY           0.0000001
+#RAIN_DURATION            1 #20
+#START_DATE               2017 08 23
+#START_TIME               0 0
+#Testing
+#GRIB2_PREFIX             "brays_harvey_namanl_218_"
+#          TYPE  Tstart  wind_DT  nlat nlon ntimes  YYYY MM DD HR MIN SEC   BASELAT        BASELON        XTRANS    YTRANS
+#RAIN_GRIB2   3   0.0     10800.0   614 428    65    2017 08 23  0  0  0.0   29.6876454722  264.486508917  256784.0  3286818.0
+# Baselat, Baselon, Xtrans, Ytrans obtained from WMS by choosing a point approximately in the middle of the model.
+
+#Output
+MAP_TYPE                 1
+SUMMARY                  "brays_harvey.sum"
+OUTLET_HYDRO             "brays_harvey.otl"
+DEPTH                    "brays_harvey.dep"
+DIS_RAIN                 "brays_harvey.drn"
+CHAN_DEPTH               "brays_harvey.cdp"
+CHAN_DISCHARGE           "brays_harvey.cdq"
+IN_HYD_LOCATION          "brays_harvey.ihl"
+OUT_HYD_LOCATION         "brays_harvey.ohl"
