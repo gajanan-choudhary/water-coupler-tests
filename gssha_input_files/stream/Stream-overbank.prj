@@ -1,0 +1,77 @@
+GSSHAPROJECT
+#WMS info
+WMS WMS 10.1.10 (64-bit)
+
+#Grid data
+FLINE                    "Stream.map"
+WATERSHED_MASK           "Stream.msk"
+ELEVATION                "Stream.ele"
+MANNING_N                0.03
+PROJECTION_FILE          "Stream.pro"
+METRIC
+QOUT_CFS
+GRIDSIZE                 90.000000
+ROWS                     70
+COLS                     75
+
+#Boundary Conditions
+#Elevation of outrow,outcol cell is 128.0m
+#Elevation of stream node there is 128.958966m
+#Stream cross section: trapezoidal. 16m top, 8m bottom, 8m depth
+OUTROW                   64
+OUTCOL                   1
+OUTSLOPE                 0.001000
+HEAD_BOUND
+OVERBANK_FLOW
+#BOUND_DEPTH              2.00
+BOUND_TS                 "dummy_bound_ts"
+
+#Initial Conditions
+#INIT_ELEV_HEAD           128.0
+#INIT_ELEV_HEAD           130.958968
+READ_CHAN_HOTSTART       "Stream.chanhotstart"
+
+#Time data
+TOT_TIME                 360
+TIMESTEP                 0.5
+MAP_FREQ                 2
+HYD_FREQ                 2
+TIME_SERIES_FILE         "Stream.xys"
+
+#Mapping Tables
+MAPPING_TABLE            "Stream.cmt"
+ST_MAPPING_TABLE         "Stream.smt"
+#INDEXGRID_GUID          "Uniform.idx" "4c82b6eb-1d4f-4f52-8fcc-208eefa4d6ba"
+
+#Overland Flow
+OVERTYPE                 ADE-PC
+
+#Stream Flow
+NON_ORTHO_CHANNELS
+STREAM_CELL              "Stream.gst"
+CHANNEL_INPUT            "Stream.cif"
+DIFFUSIVE_WAVE
+
+#Precipitation
+PRECIP_UNIF
+RAIN_INTENSITY           40.000000
+RAIN_DURATION            120
+START_DATE               2018 11 16
+START_TIME               0 0
+#Testing
+#GRIB2_PREFIX             "Stream"
+#           1  Tstart wind_DT  nlat nlon ntimes  YYYY MM DD HR MIN SEC  BASELAT   BASELON     XTRANS      YTRANS
+#RAIN_GRIB2  1   0.0   600.0    614 428    16    2018 11 16 0   0  0.0  29.36019  265.26437  238467.15  4297782.46
+
+#Output
+MAP_TYPE                 1
+SUMMARY                  "Stream.sum"
+OUTLET_HYDRO             "Stream.otl"
+DEPTH                    "Stream.dep"
+DIS_RAIN                 "Stream.drn"
+CHAN_DEPTH               "Stream.cdp"
+CHAN_DISCHARGE           "Stream.cdq"
+IN_HYD_LOCATION          "Stream.ihl"
+OUT_HYD_LOCATION         "Stream.ohl"
+#QUIET
+
