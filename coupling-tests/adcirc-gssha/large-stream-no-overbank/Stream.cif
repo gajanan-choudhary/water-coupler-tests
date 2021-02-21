@@ -1,0 +1,1 @@
+../../../gssha_input_files/stream/Stream.cif
